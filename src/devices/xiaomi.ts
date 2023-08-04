@@ -1608,6 +1608,24 @@ const definitions: Definition[] = [
         ota: ota.zigbeeOTA,
     },
     {
+        zigbeeModel: ['lumi.switch.b2lacn01'],
+        model: 'QBKG18LM',
+        vendor: 'Xiaomi',
+        description: 'Aqara T1 double rocker without neutral',
+        fromZigbee: [fz.on_off, fz.xiaomi_power, fz.xiaomi_multistate_action, fz.aqara_opple],
+        toZigbee: [tz.on_off, tz.xiaomi_switch_operation_mode_opple, tz.xiaomi_switch_power_outage_memory,
+            tz.xiaomi_led_disabled_night, tz.xiaomi_flip_indicator_light],
+        exposes: [
+            e.switch(), e.action(['single', 'double']), e.power().withAccess(ea.STATE), e.energy(),
+            e.voltage(), e.device_temperature().withAccess(ea.STATE),
+            e.power_outage_memory(), e.led_disabled_night(), e.flip_indicator_light(),
+            e.enum('operation_mode', ea.ALL, ['control_relay', 'decoupled'])
+                .withDescription('Decoupled mode for left button'),
+        ],
+        onEvent: preventReset,
+        ota: ota.zigbeeOTA,
+    },
+    {
         zigbeeModel: ['lumi.switch.b1nacn01'],
         model: 'QBKG19LM',
         vendor: 'Xiaomi',
@@ -1893,7 +1911,7 @@ const definitions: Definition[] = [
                             .withFeature(e.numeric('y', ea.SET)
                                 .withValueMin(fp1.constants.region_config_zoneY_min)
                                 .withValueMax(fp1.constants.region_config_zoneY_max)),
-                    ),
+                    ).withDescription('list of dictionaries in the format {"x": 1, "y": 1}, {"x": 2, "y": 1}'),
                 ),
             e.composite('region_delete', 'region_delete', ea.SET)
                 .withDescription('Region definition to be deleted from the device.')
