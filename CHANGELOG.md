@@ -1,5 +1,33 @@
 # Changelog
 
+## [15.54.0](https://github.com/Koenkk/zigbee-herdsman-converters/compare/v15.53.0...v15.54.0) (2023-08-05)
+
+
+### Features
+
+* Add OTA support for Bticino 4027C ([#6049](https://github.com/Koenkk/zigbee-herdsman-converters/issues/6049)) ([72505b9](https://github.com/Koenkk/zigbee-herdsman-converters/commit/72505b90123ad90604e9dd08e0fa77ef3fd33a1d))
+* **add:** SZ-WTD03 ([#6048](https://github.com/Koenkk/zigbee-herdsman-converters/issues/6048)) ([9de8d85](https://github.com/Koenkk/zigbee-herdsman-converters/commit/9de8d853c40db0bff3738c8231449b2cbde8d904))
+* **add:** ZY-M100-24G @VladKorr https://github.com/Koenkk/zigbee2mqtt/issues/18237 ([39f13a9](https://github.com/Koenkk/zigbee-herdsman-converters/commit/39f13a9401576f2aedb5bba02b3f095d6926af89))
+* Support OTA for Gledopto GL-D-007P @BradleyFord https://github.com/Koenkk/zigbee-OTA/pull/342 ([3298895](https://github.com/Koenkk/zigbee-herdsman-converters/commit/3298895e54849e7527f80b43919f3b38c6d9a91c))
+
+## [15.53.0](https://github.com/Koenkk/zigbee-herdsman-converters/compare/v15.52.0...v15.53.0) (2023-08-04)
+
+
+### Features
+
+* **add:** CCTFR6100Z3 https://github.com/Koenkk/zigbee2mqtt/issues/17377 ([fa2cea5](https://github.com/Koenkk/zigbee-herdsman-converters/commit/fa2cea5a4911afb0737fbd3ff47e473456bfa749))
+* **add:** MTG075-ZB-RL ([#6045](https://github.com/Koenkk/zigbee-herdsman-converters/issues/6045)) ([36b5336](https://github.com/Koenkk/zigbee-herdsman-converters/commit/36b5336ebe084bffff2701cdfe2f3baa057abdee))
+* **add:** RS 232 C ([#6046](https://github.com/Koenkk/zigbee-herdsman-converters/issues/6046)) ([ad5336c](https://github.com/Koenkk/zigbee-herdsman-converters/commit/ad5336c9c972446e00c460953eb0b88e2bfc97b7))
+
+
+### Bug Fixes
+
+* **detect:** Detect `_TZ1800_ho6i0zk9` as Lidl HG06336 ([#6044](https://github.com/Koenkk/zigbee-herdsman-converters/issues/6044)) ([75b6e66](https://github.com/Koenkk/zigbee-herdsman-converters/commit/75b6e66e4ca4571fca0ac8a0bcf61e6ca94b02b2))
+* **detect:** Detect `_TZ3210_x13bu7za` as Lidl 399629_2110 .https://github.com/Koenkk/zigbee2mqtt/issues/18516 ([727da01](https://github.com/Koenkk/zigbee-herdsman-converters/commit/727da01b551792554fc6529dbec811d28a9d71b1))
+* **detect:** Detect `NimlyIn` as Onesti Products AS easyCodeTouch_v1 https://github.com/Koenkk/zigbee-herdsman-converters/issues/6043 ([c7c2fdb](https://github.com/Koenkk/zigbee-herdsman-converters/commit/c7c2fdb79d15593f8f811b5da27b1008b3efae34))
+* **detect:** Detect `PSMP5_00.00.03.05TC` as Lupus 12050 https://github.com/Koenkk/zigbee2mqtt/issues/18522 ([859227e](https://github.com/Koenkk/zigbee-herdsman-converters/commit/859227ee64b9b41f36b9638ddc166829cda5dd56))
+* Fixes for Third Reality 3RSNL02043Z ([#6042](https://github.com/Koenkk/zigbee-herdsman-converters/issues/6042)) ([cca4ed0](https://github.com/Koenkk/zigbee-herdsman-converters/commit/cca4ed0bda6fbecdfba5732cedf71edd7480d71c))
+
 ## [15.52.0](https://github.com/Koenkk/zigbee-herdsman-converters/compare/v15.51.0...v15.52.0) (2023-08-03)
 
 
